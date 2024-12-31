@@ -25,12 +25,11 @@
                 <p>
                    I'm an undergraduate in <a href="https://www.snu.ac.kr/index.html">Seoul National University</a>, actively engaging in research within the field of Reinforcement Learning (RL). 
                    I'm majoring in Computer Science and Engineering, with a minor in Mathematical Sciences.
-                   Currently, I am tackling offline RL problems at Yonsei University's <a href="https://youngwoon.github.io/">RLLAB</a> under the guidance of <a href="https://youngwoon.github.io/">Youngwoon Lee</a>. 
+                   Currently, I am tackling offline RL problems with model-based approaches at Yonsei University's <a href="https://youngwoon.github.io/">RLLAB</a> under the guidance of <a href="https://youngwoon.github.io/">Youngwoon Lee</a>. 
                 </p>
                 <p>
                    Previously, I have done a research internship at <a href="https://hcs.snu.ac.kr">Human-centered Computer Systems Lab</a> in Seoul National University with <a href="https://youngkilee.blogspot.com/">Youngki Lee</a>. 
                    During the internship, my primary focus was on bridging the gap between machine learning processes and human-like learning processes. 
-                   Additionally, I contributed to the development of NeRF models tailored for on-device applications.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:williampark202@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -50,12 +49,31 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                    The goal of my research is to bridge the gap between machine learning processes and human-like learning processes, focusing on improving data efficiency of reinforcement learning agents.
-                </p>
-                <p>
-                    So far, I have explored the differences and similarities between reinforcement learning agents and cognition of human agents (toddlers).
-                    I also explored on how to evaluate human-like artificial intelligence from the perspective of human cognitive development.
-                    Currently, I'm focusing on how to utilize offline data to accelerate the learning process of reinforcement learning agents.
+                    The goal of my research is to develop a <strong>"foundational embodied agent"</strong>, an embodied agent that is generalizable and rapidly adapt to novel tasks with few demonstrations.
+                    To enable this, foundational models must develop priors about the world, capturing task distributions (e.g., manipulation, goal-reaching) and environmental dynamics (e.g., physical properties).
+                    
+                    <p></p>
+                    
+                    My current focus is on three key approaches:
+
+                    <ul class="a">
+                    <li> <strong>World Models</strong>: 
+                    World models, which can be trained on abundant task-agnostic data, offer richer and grounded learning signals via simulated trajectories, enabling improved generalization and planning. 
+                    However, world models are often inaccurate, especially in capturing physical knowledge critical for embodied agents.
+                    How can we address these inaccuracies in model-based RL, and how can we train better world models?
+
+                    <p></p>
+
+                    <li> <strong>Offline RL</strong>:
+                    While behavior cloning (BC) with large demonstration dataset have proven instrumental in building foundation models in robotics, it cannot learn stitching or corrective behaviors, requiring extensive optimal data.
+                    Can we leverage offline RL to utilize suboptimal datasets for training and fine-tuning foundational embodied agents?
+
+                    <p></p>
+
+                    <li> <strong>Unsupervised RL</strong>:
+                    Unsupervised RL enables task-agnostic pretraining through intrinsic rewards. 
+                    Similar to the success of unsupervised pretraining in vision and NLP domains, can we train transferable representations and skills in RL and effectively apply them to downstream tasks?
+                    </ul>
                 </p>
               </td>
             </tr>
